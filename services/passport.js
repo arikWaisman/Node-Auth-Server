@@ -3,7 +3,7 @@ const User = require('../models/user');
 const config = require('../config');
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
-const LocalStrategy = require('passport-local')
+const LocalStrategy = require('passport-local');
 
 //Create local strategy to handle signin 
 const localOptions = { usernameField : 'email' }; //uses username by default we change it to email
